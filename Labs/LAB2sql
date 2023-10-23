@@ -1,0 +1,38 @@
+/* SET THE FORMAT OF THE DATE IN THE START OF THE PROGRAM */
+ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MM-YYYY';
+ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MM-YYYY HH24:MI';
+
+/* START PROGRAM */
+CREATE TABLE employee (
+employeeid NUMBER(4) PRIMARY KEY,
+employeename VARCHAR(50) NOT NULL,
+employeeposition VARCHAR(50) NOT NULL,
+title VARCHAR(6) CHECK(title IN('Ms.', 'Dr.', 'Mrs.')),
+birthdate DATE NOT NULL,
+hiredate DATE UNIQUE NULL,
+address VARCHAR(50),
+city VARCHAR(50),
+country VARCHAR(50)
+);
+
+/* INSERT A ROW IN THE TABLE */ 
+INSERT INTO employee VALUES
+(19, 'Cathi Payne', 'Sales Representative', 'Ms.', '1-5-1992', null, 'Apt. 2A', 'Seattle', 'USA' );
+
+INSERT INTO employee VALUES
+(20, 'Maria Green', 'Vice President', 'Dr.', '19-2-1962', null, null, 'Tacoma', 'USA' );
+
+/* TO DELETE THE TABLE */
+DROP TABLE employee;
+
+SELECT * FROM employee;
+
+INSERT INTO employee VALUES
+(22, 'Bill Brown', 'President',
+'Dr.',TO_DATE('01/31 2017 3:25', 'MM/DD YYYY HH24:MI'),'1-5-2012',null, 'Tacoma','USA');
+
+SELECT employeeid, birthdate, TO_CHAR(birthdate,'DD/MM HH24') 
+FROM employee;
+
+/*SAVE TABLE*/
+COMMIT;

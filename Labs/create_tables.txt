@@ -1,0 +1,79 @@
+alter table DEPARTMENT
+DROP CONSTRAINT FK_empl_dep;
+
+drop table WORKS_ON;
+drop table DEPENDENT;
+drop table DEPT_LOCATIONS;
+drop table project;
+drop table EMPLOYEE;
+drop table DEPARTMENT;
+
+
+
+create table DEPARTMENT(
+Dname         VARCHAR2(50),
+Dnumber       NUMBER(5),
+MGRSSN        NUMBER(10),
+MGRSTARTDATE  DATE,
+CONSTRAINT p_key PRIMARY KEY (Dnumber)
+);
+
+create table EMPLOYEE(
+Fname     VARCHAR2(50),
+Minit     VARCHAR2(50),
+Lname     VARCHAR2(50),
+SSN       NUMBER(10),
+Bdate     DATE,
+Address   VARCHAR2(50),
+Sex       VARCHAR2(50),
+Salary    NUMBER(7),
+SUPERSSN  NUMBER(10),
+Dno       NUMBER(5),
+CONSTRAINT pri_key PRIMARY KEY (SSN), 
+CONSTRAINT FK_employee_department FOREIGN KEY (Dno) REFERENCES DEPARTMENT(Dnumber), 
+CONSTRAINT FK_employee FOREIGN KEY (SUPERSSN) REFERENCES EMPLOYEE(SSN)
+);
+
+create table PROJECT(
+Pname     VARCHAR2(50),
+Pnumber   NUMBER(5),
+Plocation VARCHAR2(50),
+Dnum NUMBER(5),
+CONSTRAINT pr_key PRIMARY KEY (Pnumber),
+CONSTRAINT FK_proj_dep FOREIGN KEY (Dnum) REFERENCES DEPARTMENT(Dnumber)
+);
+
+
+create table DEPENDENT(
+ESSN            NUMBER(10),
+Dependent_Name  VARCHAR2(50),
+Sex             VARCHAR2(50),
+Bdate           DATE,
+Relationship    VARCHAR2(50),
+CONSTRAINT prim_key PRIMARY KEY (ESSN, Dependent_Name), 
+CONSTRAINT FK_employee_dependent FOREIGN KEY (ESSN) REFERENCES EMPLOYEE(SSN)
+);
+
+create table DEPT_LOCATIONS(
+Dnumber   NUMBER(5),
+Dlocation VARCHAR2(50),
+CONSTRAINT prima_key PRIMARY KEY (Dnumber, Dlocation), 
+CONSTRAINT FK_location_department FOREIGN KEY (Dnumber) REFERENCES DEPARTMENT(Dnumber)
+);
+
+create table WORKS_ON(
+ESSN    NUMBER(10),
+Pno     NUMBER(5),
+Hours   NUMBER(5),
+CONSTRAINT primar_key PRIMARY KEY (ESSN, Pno), 
+CONSTRAINT FK_employee_works FOREIGN KEY (ESSN) REFERENCES EMPLOYEE(SSN), 
+CONSTRAINT FK_employee__project FOREIGN KEY (Pno) REFERENCES PROJECT(Pnumber)
+);
+
+alter table DEPARTMENT
+ADD CONSTRAINT FK_empl_dep FOREIGN KEY (MGRSSN) REFERENCES EMPLOYEE(SSN);
+
+
+desc DEPARTMENT;
+
+ALTER SESSION SET NLS_DATE_FORMAT='YYYY-MM-DD';

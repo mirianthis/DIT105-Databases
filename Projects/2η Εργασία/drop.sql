@@ -1,0 +1,37 @@
+--DELETE THE TABLES
+
+alter table VACCINATIONS
+DROP CONSTRAINT prima_key
+DROP CONSTRAINT FK_popu_vac
+DROP CONSTRAINT FK_vaco_vac
+DROP CONSTRAINT FK_coun_vac;
+
+drop table VACCINATIONS;
+
+alter table VACCINATION_CENTERS
+DROP CONSTRAINT prim_key
+DROP CONSTRAINT FK_coun_vace;
+
+drop table VACCINATION_CENTERS;
+
+
+
+alter table POPULATION
+DROP CONSTRAINT pri_key
+DROP CONSTRAINT FK_coun_popu;
+
+drop table POPULATION;
+
+
+
+alter table VACCINE_COMPANIES
+DROP CONSTRAINT p_key;
+
+drop table VACCINE_COMPANIES;
+
+
+
+alter table COUNTRIES
+DROP CONSTRAINT pr_key;
+
+drop table COUNTRIES;

@@ -1,0 +1,66 @@
+
+COUNTRY_CODE    COUNTRY_NAME                                 
+------------------------------ -  ---------------------------
+           1 		 Afghanistan                                  
+          44		 Cyprus                                       
+          59		 Ethiopia                                     
+          68		 Greece                                       
+         136		 Peru                                         
+
+
+  BRAND_ID COMPANY_NAME                                                 VACCINE_NAME                                  VACCINE_CODE                                 
+---------- ------------------------------------------------------------ --------------------------------------------- ---------------------------------------------
+         1 Pfizer Inc. and BioNTech                                     Pfizer-BioNTech                               BNT162b2                                     
+         2 ModernaTX Inc.                                               Moderna                                       mRNA-1273                                    
+         3 Oxford/AstraZeneca                                           AstraZeneca                                   AZD1222                                      
+         4 Johnson and Johnson                                          Johnson and Johnson COVID-19                  -                                            
+         5 Gamaleya National Centre                                     Sputnik V                                     Gam-COVID-Vac                                
+
+
+U_ID                                          ID_NUMBER  FIRST_NAME                                    LAST_NAME                                     BIRTHDAY PHONE           STREET                                          ZIP_CODE CITY                      STA    COUNTRY
+--------------------------------------------- ---------- --------------------------------------------- --------------------------------------------- -------- --------------- --------------------------------------------- ---------- ------------------------- --- ----------
+000027ca-cc66-5e70-888d-7bc68721c645          WL 58802   Evan                                          Mendez                                        18/01/62 (875) 404-6468  Inbim Drive 266                                    56726 Nalvubit                  RI           1
+00002db9-2528-5ca6-8fc4-dd6e69648707          LL 92672   Peter                                         Mitchell                                      19/07/63 (535) 455-1827  Unajep Plaza 33                                    46352 Ujluvwa                   LA          44
+0000c9b3-f6f9-54a1-a406-d8b8d735ab33          JW 47611   Nellie                                        Clayton                                       13/12/60 (762) 805-7957  Cemjaz Circle 348                                  40927 Fegizmip                  SD          59
+00014fa2-a15e-5e2c-9d41-4e985aec7c68          SU 2976    Virginia                                      Greene                                        03/11/00 (629) 735-2236  Caav Lane 344                                      99270 Kinsomu                   OR          68
+0001cf9e-05ef-586a-9724-f17d92f37796          WT 68275   Helen                                         Sparks                                        09/12/01 (383) 444-7848  Fuda Plaza 491                                     85922 Najjapzok                 AL         136
+0002188b-3097-5098-a688-fad26903ef14          RD 21713   Oscar                                         Holmes                                        29/06/74 (332) 693-3155  Ejro Grove 77                                      38337 Deumuura                  ND           1
+00025bcc-28da-580d-b8f1-b41308e79bcb          DO 16418   Lucile                                        Moreno                                        02/02/79 (524) 839-1494  Ihiha Extension 436                                47393 Mefate                    MT          68
+0002d5ff-9a91-5e66-9b8b-e19b80e82314          ZO 61333   Ollie                                         Ross                                          06/06/98 (689) 512-5818  Nabpor Highway 188                                 64513 Duzevel                   NC         136
+0002f092-a1f2-535d-8107-66b59f2c133b          YW 23336   Floyd                                         Bowman                                        21/02/79 (509) 851-7699  Wetewa Square 519                                   6996 Wiotko                    UT          59
+00033d01-2f1a-5716-ba88-3e64aed08f78          EC 24508   Joe                                           Brooks                                        20/01/56 (308) 342-4433  Iblu Heights 202                                   60382 Tefetwus                  MD          44
+
+10 rows selected. 
+
+
+ OBJECT_ID FACILITY_ID FACILITY_NAME                                                ADDRESS                                       CITY                      STA   ZIP_CODE PHONE_NUMBER    COUNTY        COUNTRY   LATITUDE  LONGITUTE WEBSITE                                                           H
+---------- ----------- ------------------------------------------------------------ --------------------------------------------- ------------------------- --- ---------- --------------- ---------- ---------- ---------- ---------- ----------------------------------------------------------------- -
+         1     5793230 CENTRAL VALLEY GENERAL HOSPITAL                              1025 NORTH DOUTY STREET                       HANFORD                   CA       93230 (501) 219-7000  KINGS               1 36.3361589 -119.645667 http://www.hanfordhealth.com                                      N
+         2    53391362 LOS ROBLES HOSPITAL                                          150 VIA MERIDA                                WESTLAKE VILAGE           CA       91362 (870) 972-4100  VENTURA            44 34.1549389 -118.815736 http://www.losrobleshospital.com                                  N
+         3    11190023 EAST LOS ANGELES DOCTORS HOSPITAL                            4060 WHITTIER BOULEVARD                       LOS ANGELES               CA       90023 (319) 268-3000  ORANGE             59 34.0236473 -118.184165 http://www.elalax.com                                             N
+         4    17090028 SOUTHERN CALIFORNIA HOSPITAL AT HOLLYWOOD                    6245 DE LONGPRE AVENUE                        HOLLYWOOD                 CA       90028 (323) 462-2271  TULARE             68 34.0963914 -118.325235 http://sch-hollywood.com/                                         N
+         5    23691706 KINDRED HOSPITAL BALDWIN PARK                                14148 FRANCISQUITO AVENUE                     BALDWIN PARK              CA       91706 (701) 256-6100  ORANGE            136 34.0630389 -117.967438 http://www.khbaldwinpark.com                                      N
+         6    25190712 LAKEWOOD REGIONAL MEDICAL CENTER                             3700 EAST SOUTH STREET                        LAKEWOOD                  CA       90712 (419) 291-7463  TULARE            136 33.8597066 -118.148403 http://www.lakewoodregional.com                                   N
+         7    30791016 MONROVIA MEMORIAL HOSPITAL                                   323 SOUTH HELIOTROPE AVENUE                   MONROVIA                  CA       91016 (660) 726-3941  FRANKLIN           44 34.1487587 -117.992668 http://www.monroviamemorial.com                                   N
+         8    30891754 MONTEREY PARK HOSPITAL                                       900 SOUTH ATLANTIC BOULEVARD                  MONTEREY PARK             CA       91754 (931) 738-9211  CONCORDIA          59 34.0494661 -118.138262 http://www.montereyparkhosp.com                                   N
+         9    47090505 STAR VIEW ADOLESCENT - P H F                                 4025 WEST 226 STREET                          TORRANCE                  CA       90505 (715) 762-7500  UNION              68 33.8239145 -118.356097 http://www.starsinc.com/                                          N
+        10     9092879 CORONA REGIONAL MEDICAL CENTER-MAGNOLIA                      730 MAGNOLIA AVENUE                           CORONA                    CA       92879 (415) 600-6000  RIVERSIDE         136 33.8580833 -117.553858 http://www.coronaregional.com                                     N
+
+10 rows selected. 
+
+
+VACCINATION_ID U_ID                                          VACCINE_TYPE FIRST FIRST_DO SECON SECOND_D VACCINATION_CENTER
+-------------- --------------------------------------------- ------------ ----- -------- ----- -------- ------------------
+             1 000027ca-cc66-5e70-888d-7bc68721c645                     2 TRUE  09/02/21 TRUE  13/03/21            5793230
+             2 00002db9-2528-5ca6-8fc4-dd6e69648707                     3 TRUE  13/02/21 FALSE                            
+             3 0000c9b3-f6f9-54a1-a406-d8b8d735ab33                       FALSE          FALSE                            
+             4 00014fa2-a15e-5e2c-9d41-4e985aec7c68                       FALSE          FALSE                            
+             5 0001cf9e-05ef-586a-9724-f17d92f37796                       FALSE          FALSE                            
+             6 0002188b-3097-5098-a688-fad26903ef14                     3 TRUE  22/02/21 FALSE                            
+             7 00025bcc-28da-580d-b8f1-b41308e79bcb                     3 TRUE  08/02/21 TRUE  09/03/21           30791016
+             8 0002d5ff-9a91-5e66-9b8b-e19b80e82314                     1 TRUE  26/02/21 TRUE  08/03/21           11190023
+             9 0002f092-a1f2-535d-8107-66b59f2c133b                     2 TRUE  04/02/21 TRUE  08/03/21           25190712
+            10 00033d01-2f1a-5716-ba88-3e64aed08f78                       FALSE          FALSE                            
+
+10 rows selected. 
+
